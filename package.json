@@ -1,0 +1,15 @@
+{
+  "name": "docker-file-build-tools",
+  "version": "0.0.1",
+  "bin": {
+    "docker-file-build": "./src/build.sh"
+  },
+  "homepage": "https://github.com/aariacarterweir/docker-file-build-tools",
+  "bugs": "https://github.com/aariacarterweir/docker-file-build-tools/issues",
+  "license": "MIT",
+  "author": "Aaria Carter-Weir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aariacarterweir/docker-file-build-tools.git"
+  }
+}
