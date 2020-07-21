@@ -18,6 +18,10 @@ done
 # DO BUILD
 docker build -t "${IMAGE_NAME}:latest" .
 
+if [ ! "$VERSION" ]; then
+  VERSION=$(node $(dirname $(realpath $0))/get-version.js)
+fi
+
 if [ "$VERSION" ]; then
     docker tag "${IMAGE_NAME}:latest" "${IMAGE_NAME}:${VERSION}"
 fi

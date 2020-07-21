@@ -1,6 +1,6 @@
 {
   "name": "dockerfile-build-tools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "dockerfile-build": "./src/build.sh"
   },
@@ -11,5 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/aariacarterweir/dockerfile-build-tools.git"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "realpath": "^1.1.0"
   }
 }
