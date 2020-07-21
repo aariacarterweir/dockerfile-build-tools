@@ -1,15 +1,15 @@
 {
-  "name": "docker-file-build-tools",
+  "name": "dockerfile-build-tools",
   "version": "0.0.1",
   "bin": {
-    "docker-file-build": "./src/build.sh"
+    "dockerfile-build": "./src/build.sh"
   },
-  "homepage": "https://github.com/aariacarterweir/docker-file-build-tools",
-  "bugs": "https://github.com/aariacarterweir/docker-file-build-tools/issues",
+  "homepage": "https://github.com/aariacarterweir/dockerfile-build-tools",
+  "bugs": "https://github.com/aariacarterweir/dockerfile-build-tools/issues",
   "license": "MIT",
   "author": "Aaria Carter-Weir",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aariacarterweir/docker-file-build-tools.git"
+    "url": "https://github.com/aariacarterweir/dockerfile-build-tools.git"
   }
 }
