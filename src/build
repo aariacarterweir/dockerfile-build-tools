@@ -19,13 +19,14 @@ done
 
 # GET SCRIPT PATH
 SCRIPT_PATH=$(dirname $(realpath $0))
+READ_PACKAGE="$SCRIPT_PATH"/read-package
 
 if [ ! "$VERSION" ]; then
-  VERSION=$(node "$SCRIPT_PATH"/read-package-json.js version)
+  VERSION=$("$READ_PACKAGE" version)
 fi
 
 if [ ! "$IMAGE_NAME" ]; then
-  IMAGE_NAME=$(node "$SCRIPT_PATH"/read-package-json.js name)
+  IMAGE_NAME=$("$READ_PACKAGE" docker-username)/$("$READ_PACKAGE" name)
 fi
 
 if [ ! "$LATEST_TAG" ]; then
