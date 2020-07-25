@@ -1,8 +1,8 @@
 {
   "name": "dockerfile-build-tools",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "bin": {
-    "dockerfile-build": "./src/build"
+    "dockerfile-build": "./src/build.sh"
   },
   "homepage": "https://github.com/aariacarterweir/dockerfile-build-tools",
   "bugs": "https://github.com/aariacarterweir/dockerfile-build-tools/issues",

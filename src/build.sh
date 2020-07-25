@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # EXAMPLE USAGE
 # sh build.sh -v 1.0.11 -p
@@ -19,7 +19,7 @@ done
 
 # GET SCRIPT PATH
 SCRIPT_PATH=$(dirname $(realpath $0))
-READ_PACKAGE="$SCRIPT_PATH"/read-package
+READ_PACKAGE="$SCRIPT_PATH"/read-package.js
 
 if [ ! "$VERSION" ]; then
   VERSION=$("$READ_PACKAGE" version)
