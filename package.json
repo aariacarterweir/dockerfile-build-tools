@@ -1,6 +1,6 @@
 {
   "name": "dockerfile-build-tools",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "bin": {
     "dockerfile-build": "./src/build.sh"
   },

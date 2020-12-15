@@ -26,7 +26,3 @@ Easy way to build, version and push your local dockerfile to docker hub
 - run `yarn dockerfile-build-tools -p` to push your versioned docker image to docker-hub
 - run `yarn dockerfile-build-tools -v 0.2.2 -p` to combine a manual version override and also
     push your image to docker-hub
-
-## Top Tips
-- If you restart your terminal after adding this package,
-    you can just run `dockerfile-build-tools` instead of prefixing the command with `yarn`
