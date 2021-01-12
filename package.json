@@ -1,6 +1,6 @@
 {
   "name": "dockerfile-build-tools",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "bin": {
     "dockerfile-build": "./build.js"
   },
@@ -15,6 +15,7 @@
   "dependencies": {
     "clear-module": "4.1.1",
     "dotenv": "8.2.0",
+    "enquirer": "2.3.6",
     "minimist": "1.2.5",
     "path": "^0.12.7",
     "write-pkg": "4.0.0"
