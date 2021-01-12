@@ -5,12 +5,11 @@ Easy way to build, version and push your local dockerfile to docker hub
 ## Installation
 - run `yarn add dockerfile-build-tools`
 - Either:
-    - Set up your package json with the name, docker-username & version fields matching the image name and
+    - Set up your package json with the docker-image-name & version fields matching the image name and
         version of your docker hub target image
         ```json
           {
-            "name": "docker-node-yarn",
-            "docker-username": "aariacarterweir",
+            "docker-image-name": "aariacarterweir/docker-node-yarn",
             "version": "0.1.4"
           }       
         ```
