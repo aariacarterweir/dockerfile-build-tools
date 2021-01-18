@@ -21,7 +21,8 @@ module.exports = async (args) => {
         const response = await prompt({
             type: 'input',
             name: 'version',
-            message: `Current version: ${packageJson.version}, new version?`
+            message: `Current version: ${packageJson.version}, new version?`,
+            initial: packageJson.version,
         });
 
         packageJson.version = response.version;
