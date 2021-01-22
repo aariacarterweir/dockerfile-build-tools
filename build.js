@@ -79,4 +79,8 @@ module.exports = async (...args) => {
     };
 }
 
-module.exports(...process.argv.slice(2));
+// if file run directly, run the function
+if (module === require.main) {
+    module.exports(...process.argv.slice(2));
+}
+
