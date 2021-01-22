@@ -1,9 +1,10 @@
 {
   "name": "dockerfile-build-tools",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "bin": {
     "dockerfile-build": "./build.js"
   },
+  "main": "build.js",
   "homepage": "https://github.com/aariacarterweir/dockerfile-build-tools",
   "bugs": "https://github.com/aariacarterweir/dockerfile-build-tools/issues",
   "license": "MIT",
