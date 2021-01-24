@@ -38,6 +38,8 @@ module.exports = async (...args) => {
             argv.v = response.version;
             packageJson.version = response.version;
             writePkg(packageJsonPath, packageJson);
+
+            console.log('updated package json with new version');
         }
     }
 
@@ -59,7 +61,7 @@ module.exports = async (...args) => {
     } = process.env;
 
     // build & tag
-    ex(`docker build -t ${IMAGE_NAME}:${LATEST_TAG} .`);
+    ex(`docker build -t ${IMAGE_NAME}:${LATEST_TAG} ${workingDir}`);
 
     if (VERSION) {
         ex(`docker tag ${IMAGE_NAME}:${LATEST_TAG} ${IMAGE_NAME}:${VERSION}`);
