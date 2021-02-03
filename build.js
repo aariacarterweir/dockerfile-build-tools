@@ -17,6 +17,7 @@ module.exports = async (...args) => {
     const workingDir = argv['working-dir'] || process.cwd();
     const packageJsonPath = path.resolve(workingDir, 'package.json');
     const packageJson = require(packageJsonPath);
+    const dockerFile = argv.f || 'Dockerfile';
 
     interactive: {
         if (argv['non-interactive']) {
@@ -61,7 +62,7 @@ module.exports = async (...args) => {
     } = process.env;
 
     // build & tag
-    ex(`docker build -t ${IMAGE_NAME}:${LATEST_TAG} ${workingDir}`);
+    ex(`docker build -f ${dockerFile} -t ${IMAGE_NAME}:${LATEST_TAG} ${workingDir}`);
 
     if (VERSION) {
         ex(`docker tag ${IMAGE_NAME}:${LATEST_TAG} ${IMAGE_NAME}:${VERSION}`);
